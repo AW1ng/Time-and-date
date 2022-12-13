@@ -132,10 +132,8 @@ class People {
             Date D;
             for(int i = 0 ; i < Persons.size() ; i++) {
                 cout<< Persons[i].ToString()<<" days left: "<< Persons[i].CompareBirthday( D ) << endl;
-//                if( Persons[i].CompareBirthday( D ) == 0 ) cout << "Hurray!! " + Persons[i].ToString() << endl;
             }
             for(int i = 0 ; i < Persons.size() ; i++) {
-//                cout<< Persons[i].ToString()<<" days left: "<< Persons[i].CompareBirthday( D ) << endl;
                 if( Persons[i].CompareBirthday( D ) == 0 ) cout << "Hurray!! " + Persons[i].ToString() << endl;
             }
         }
@@ -156,60 +154,6 @@ int main() {
     
     OurPeople.Print();
     
-    //cout<<KM.ToString();
-/*    time_t TT = time(NULL);
-    tm *TM = localtime(&TT);
-    TM->tm_year = 120;//2020 since 1900
-    TM->tm_mday = 12;
-    TM->tm_mon = 4;
-//    TM->tm_hour = 1;
-//    TM->tm_min = 1;
-//    TM->tm_sec = 1;
-//    time_t TTT = mktime(TM);
-//    cout<<endl<<TTT<<"  "<<TT<<endl;
-    tm TMM = { 0 } ;
-    TMM.tm_year = 120;//2020 since 1900
-    TMM.tm_mday = 12;
-    TMM.tm_mon = 4;
-    Date D1(TMM);
-    //D1.FromString("1981/04/12");
-    cout<<D1.ToString()<<endl; */
-    //int i;
-    //cin>>i;
-/*    Date D;
-    cout<<D.ToString()<<endl;
-    cout<<endl<<"Compare test: "<<OurPeople[0].CompareBirthday( D );    
-*/    //double difference = difftime(D.GetTimeT(), D1.GetTimeT()) / (60. * 60. * 24.);
-    //cout<<"Diff: "<<difference<<" days."<<endl;
-
-/*
-    time_t t = time(nullptr);
-	tm* local = localtime(&t);
-	cout << local->tm_hour << endl;
-	cout << asctime(local) << endl;
-	
-	// date formatting
-	
-	cout << std::put_time(local, "%Y/%m/%d %H/%M/%S") << endl;
-	
-	//input date
-	
-	std::tm local1 = *localtime(&t);
-	cin >> std::get_time(&local1, "%H/%M");
-	cout << std::asctime(&local1) << endl;
-	
-	//manipulations with dates
-	
-	 time_t a = time(nullptr);
-	 int foo;
-	 cin >> foo;
-	 time_t b = time(nullptr);
-	 double d = difftime(a, b);
-	 time_t c = b + (time_t)d;
-	 tm* local_future = std::localtime(&c);
-//	 local_future->tm_sec += 12;
-	 cout << asctime(local_future) << endl;
-*/
     cout<<endl; 
     return 0;	
 }
