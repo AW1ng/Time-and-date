@@ -18,8 +18,6 @@ vector<string> Split(string Data, string Delimiter=" ") {
         end = Data.find(Delimiter, start);
         }
     CurrSubs = Data.substr(start, end - start);
-    //cout<<CurrSubs<<endl;
-    //cout << Data.substr(start, end);
     result.push_back(CurrSubs);
     return result;
     }
@@ -147,7 +145,7 @@ class TaskManager {
         }
     };
 
-int main() { // -Wno-psabi to suppress stupid warnings
+int main() { 
     int k;
     TaskManager TM;
     string Input;
